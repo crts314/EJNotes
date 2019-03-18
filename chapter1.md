@@ -1,6 +1,6 @@
 # EJNotes
 
-## Chapter 1
+## Chapter 1 - Values, Types, and Operators
 
 ### Values 
 
