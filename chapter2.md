@@ -60,7 +60,7 @@ A function that has only a side effect can be used like this
 doSomething(param1, param2, param3);
 ```
 
-### ControlFlow
+### Control flow
 
 A block of statements is defined using brackets like this:
 
