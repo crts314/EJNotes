@@ -62,7 +62,7 @@ doSomething(param1, param2, param3);
 
 ### Control flow
 
-A block of statements is defined using brackets like this:
+A block of statements is defined using braces like this:
 
 ```javascript
 {
