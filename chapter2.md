@@ -93,23 +93,27 @@ while (condition) {
 
 Iteration is a single execution of the statements in the while block.
 
-`for` blocks are also used to define loops in a more compact way like this
+The `for` blocks are also used to define loops in a more compact way like this
 
+```javascript
 for (intialisationStatement; condition; updateStatement) {
   // the core statements of an iteration
 }
+```
 
-the previous code is equivalent to this while loop:
+The previous code is equivalent to this while loop:
 
+```javascript
 intialisationStatement;
 while (condition) {
   // the core statements of an iteration
   updateStatement;
 }
+```
 
-`break;` statement allows quitting a loop and moving to the first statement after the looping block 
+The `break;` statement allows quitting a loop and moving to the first statement after the looping block 
 
-`continue;` statement allows quitting the current iteration in a loop and moving to the first statement in the next iteration of the same looping block.
+The `continue;` statement allows quitting the current iteration in a loop and moving to the first statement in the next iteration of the same looping block.
 
 
 
