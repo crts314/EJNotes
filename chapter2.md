@@ -60,4 +60,56 @@ A function that has only a side effect can be used like this
 doSomething(param1, param2, param3);
 ```
 
+### ControlFlow
+
+A block of statements is defined using brackets like this:
+
+```javascript
+{
+  // the statements here belong to this same block
+}
+```
+
+`if` `else` blocks are used to define conditional execution like this:
+
+```javascript
+if ( condition ) {
+  // the statements in this block are executed if condition is evaluated as true
+}
+else {
+  // the statements in this block are executed if condition is evaluated as false
+}
+```
+
+The `else` block is optional
+
+`while` blocks are used to define loops like this:
+
+```javascript
+while (condition) {
+  // the statements in this block are executed while condition is evaluated as true at the start of each iteration
+}
+```
+
+Iteration is a single execution of the statements in the while block.
+
+`for` blocks are also used to define loops in a more compact way like this
+
+for (intialisationStatement; condition; updateStatement) {
+  // the core statements of an iteration
+}
+
+the previous code is equivalent to this while loop:
+
+intialisationStatement;
+while (condition) {
+  // the core statements of an iteration
+  updateStatement;
+}
+
+`break;` statement allows quitting a loop and moving to the first statement after the looping block 
+
+`continue;` statement allows quitting the current iteration in a loop and moving to the first statement in the next iteration of the same looping block.
+
+
 
