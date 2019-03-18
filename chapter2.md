@@ -1,6 +1,6 @@
 # EJNotes
 
-## Chapter 1
+## Chapter 2
 
 ### Expressions and statements
 
