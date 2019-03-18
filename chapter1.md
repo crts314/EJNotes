@@ -12,9 +12,14 @@ Numbers are values stored in 64 bits.
 
 We can do all classic arithmetic on them.
 
+The `%` symbol is used to represent the remainder operation. For example, `314 % 100` produces `14`.
+
 Operators use precedance rules and parentheses similarily as in math.
 
 Some numbers are special like `infinity` and `-Infinity`.
+
+`NaN` stands for “not a number”, even though it is a value of the number type. 
+You’ll get this result when you, for example, try to calculate `0 / 0`.
 
 ### Strings
 
