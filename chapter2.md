@@ -83,7 +83,7 @@ else {
 
 The `else` block is optional
 
-`while` blocks are used to define loops like this:
+The `while` blocks are used to define loops like this:
 
 ```javascript
 while (condition) {
