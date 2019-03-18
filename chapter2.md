@@ -83,7 +83,7 @@ else {
 
 The `else` block is optional
 
-The `while` blocks are used to define loops like this:
+The `while` block is used to define a loop like this:
 
 ```javascript
 while (condition) {
@@ -93,7 +93,8 @@ while (condition) {
 
 Iteration is a single execution of the statements in the while block.
 
-The `for` blocks are also used to define loops in a more compact way like this
+The `for` block is also used to define loop in a more concise way. 
+It separates the statements that are part of the control flow from the core statements of the loop.
 
 ```javascript
 for (intialisationStatement; condition; updateStatement) {
