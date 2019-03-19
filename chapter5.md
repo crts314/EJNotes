@@ -127,10 +127,29 @@ for (let element of a) {
 the start summary value is optional. If not provided, the first element of the array is considered as the start value,
 the combine function is only applied starting from the second element of the array.
 
+### Composition
 
+Functions can be composed. The two following calls are equivalent
 
+```javascript
+// without composition
+let intermidiaryResult = f(x)
+let finalResult = g(intermidiaryResult)
 
+// with composition
+let finalResult = g(f(x))
+```
 
+Methods can be composed. The two following calls are equivalent
+
+```javascript
+// without composition
+let intermidiaryResult = x.f()
+let finalResult = intermidiaryResult.g()
+
+// with composition
+let finalResult = x.f().g()
+```
 
 
 
