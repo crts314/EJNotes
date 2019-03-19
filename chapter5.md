@@ -1,0 +1,158 @@
+# EJNotes
+
+## Chapter 5 - Higher-Order Functions
+
+### Definition and examples
+
+Functions that operate on other functions, either by taking them as parmeters or by returning them, 
+are called higher-order functions. Since we have already seen that functions are regular values, 
+there is nothing particularly remarkable about the fact that such functions exist. The term comes from mathematics.
+
+The following is a higher-order functions returning a function.
+
+```javascript
+function greaterThan(n) {
+  return m => m > n;
+}
+let greaterThan10 = greaterThan(10);
+console.log(greaterThan10(15)); // → true
+```
+
+The next higher-order function not only returns a function but also take a function as its parameter.
+
+```javascript
+function noisy(f) {
+  return (param) => {
+    let result = f(param);
+    console.log("called with", param, ", returned", result);
+    return result;
+  };
+}
+noisy(Math.sqrt)(9); // → called with 9 , returned 3
+```
+
+### Array looping
+
+Assume we have the following action that we want to apply to all elements of an array `a`.
+
+```javascript
+// Defining the action  
+function actionF(element) {
+  // Do something to element
+}
+```
+
+`forEach` is a higher-order method of arrays allow to loop and apply an action to all elements of an array.
+
+```javascript
+a.forEach(actionF);
+```
+
+As seen in chapter 4 the same thing could be done using the equivalent for loop 
+
+```javascript
+for (let element of a) {
+  actionF(a);
+}
+```
+
+### Array filtering
+
+`filter` is a a high-order method of arrays that allow filtering an array `a` based on a test function `testF`. 
+This function does not modify the original array but rather creates and returns the new filtered array.
+
+```javascript
+let filtered = a.filter(testF);
+```
+
+This can be again achieved using the equivalent for loop
+
+```javascript
+let filtered = [];
+for (let element of a) {
+  if (testF(element)) {
+    filtered.push(element);
+  }
+}
+```
+
+### Array transforming
+
+`map` is a a high-order method of arrays that allow transforming an array `a` 
+based on a test function `transformF` that can transforms a single element of the array. 
+like `filter` it does not modify the original array but rather creates and returns the new transformed array.
+
+```javascript
+let mapped = a.filter(testF);
+```
+
+This can be again achieved using the equivalent for loop
+
+```javascript
+let mapped = [];
+for (let element of a) {
+  newElement = transformF(element))
+  mapped.push(newElement);
+}
+```
+
+### Array summarizing
+
+`reduce` is a a high-order method of arrays that allow summarizing an array `a` into a single summary value
+based on a start summary value, 
+and a function that combines the current summary value with an additional value of the array. 
+Such function is usually like this.
+
+```javascript
+function combineF(currentSummary, element) { 
+  // computes and returns the new currentSummary by combining currentSummary and element
+}
+```
+
+like `filter` and `map` it does not modify the original array but rather computes and returns the summary value.
+
+```javascript
+let summary = a.filter(combineF, start);
+```
+
+This can be again achieved using the equivalent for loop
+
+```javascript
+let summary = start;
+for (let element of a) {
+  summary = combineF(summary, element))
+}
+```
+
+the start summary value is optional, if not provided the first element of the array is considered as the start value,
+the combine function is only applied starting from the second element of the array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
