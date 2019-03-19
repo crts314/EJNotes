@@ -209,7 +209,7 @@ function printAll(param1, otherParams...) {
   }
 }
 
-//function call 1 (no need for brackets around the parameters the array elements)
+//function call 1 (no need for brackets around the array elements)
 printAll("a", 10, 20)
 // → a
 // → 10
