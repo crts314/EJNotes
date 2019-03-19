@@ -133,8 +133,8 @@ Functions can be composed. The two following calls are equivalent
 
 ```javascript
 // without composition
-let intermidiaryResult = f(x)
-let finalResult = g(intermidiaryResult)
+let intermediaryResult = f(x)
+let finalResult = g(intermediaryResult)
 
 // with composition
 let finalResult = g(f(x))
@@ -144,8 +144,8 @@ Methods can be composed. The two following calls are equivalent
 
 ```javascript
 // without composition
-let intermidiaryResult = x.f()
-let finalResult = intermidiaryResult.g()
+let intermediaryResult = x.f()
+let finalResult = intermediaryResult.g()
 
 // with composition
 let finalResult = x.f().g()
