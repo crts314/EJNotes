@@ -67,7 +67,7 @@ The types of values discussed in earlier chapters, such as numbers, strings, and
 
 Objects work differently. You can change their properties, causing a single object value to have different content at different times.
 
-Therefore is a difference between having two references to the same object and having two different objects that contain the same properties at a given time. Because object can change, two objects are equal only if they conrrespond to the same bits in memory
+Therefore there is a difference between having two references to the same object and having two different objects that contain the same properties at a given time. Because object can change, two objects are equal only if they conrrespond to the same bits in memory
 
 ```javascript
 let object1 = {value: 10};
