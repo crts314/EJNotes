@@ -99,7 +99,7 @@ for (let element of a) {
 
 ### Arrray methods 
 
-push` and `unshift` add a new element respectively in the back and in the front of the array they belong to. 
+`push` and `unshift` add a new element respectively in the back and in the front of the array they belong to. 
 `pop` and `shift` they remove and return the element respectively in the back and in the front of the array.
 
 ```javascript
@@ -126,8 +126,7 @@ console.log([0, 10, 20, 30, 40].slice(2)); // → [20, 30, 40]
 The `concat` method can be used to glue arrays together to create a new array, similar to what the + operator does for strings.
 
 ```javascript
-console.log(["a", "b"].concat(["c", "d"]));
-// → ["a", "b", "c", "d"]
+console.log(["a", "b"].concat(["c", "d"])); // → ["a", "b", "c", "d"]
 ```
 
 `indexOf` method takes as parameter a value and returns the first index of the array where such value is stored.
@@ -139,7 +138,7 @@ console.log([0, 10, 20, 30, 40].indexOf(20)); // → 2
 ### String methods
 
 `slice` and `indexOf`, resemble the array methods of the same name.
-One difference is that a string’s indexOf can search for a string containing more than one character, 
+One difference is that a string’s `indexOf` can search for a string containing more than one character, 
 whereas the corresponding array method looks only for a single element.
 
 ```javascript
@@ -161,7 +160,7 @@ and keeps adding the charachter as prefix until the the string reaches its lengt
 console.log(String(6).padStart(3, "0")); // → 006
 ```
 
-You can split a string on every occurrence of another string with `split and join it again with `join`.
+You can split a string on every occurrence of another string with `split` and join it again with `join`.
 
 ```javascript
 let sentence = "Secretarybirds specialize in stomping";
@@ -202,7 +201,7 @@ Here is the same example with the "Rest" syntax which is equivalent to the first
 with the exception that the array must be the last parameter.
 
 ```javascript
-// function definition 
+// function definition (3 dots added after the array parameter) 
 function printAll(param1, otherParams...) {
   console.log(param1);
   for (let element of otherParams) {
@@ -210,7 +209,7 @@ function printAll(param1, otherParams...) {
   }
 }
 
-//function call 1
+//function call 1 (no need for brackets around the parameters the array elements)
 printAll("a", 10, 20)
 // → a
 // → 10
