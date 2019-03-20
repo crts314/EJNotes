@@ -33,8 +33,11 @@ Each binding has a scope, which is the part of the program in which the binding 
 For bindings defined outside of any function or block, the scope is the whole program. 
 You can refer to such bindings wherever you want. These are called global.
 
+Otherwise, the scope usually starts at the instruction where the binding is declared and dies at the end of its block. 
+Such are bindings are known as local. 
+
 Bindings created for function parameters or declared inside a function can be referenced only in that function, 
-so they are known as local bindings. Every time the function is called, new instances of these bindings are created. 
+so they are local bindings as well. Every time the function is called, new instances of these bindings are created. 
 This provides some isolation between functions
 
 Bindings declared with let and const are in fact local to the block that they are declared in, 
