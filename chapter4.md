@@ -82,7 +82,7 @@ console.log(object1 == object3);
 
 ### Array loops
 
-The following two ways of looping on an array a are equivalent.
+The following two ways of looping on an array `a` are equivalent.
 
 ```javascript
 for (let i = 0; i < a.length; i++) {
