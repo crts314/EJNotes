@@ -8,7 +8,7 @@ Functions that operate on other functions, either by taking them as parmeters or
 are called higher-order functions. Since we have already seen that functions are regular values, 
 there is nothing particularly remarkable about the fact that such functions exist. The term comes from mathematics.
 
-The following is a higher-order functions returning a function.
+The following is a higher-order function returning a function.
 
 ```javascript
 function greaterThan(n) {
@@ -18,7 +18,7 @@ let greaterThan10 = greaterThan(10);
 console.log(greaterThan10(15)); // → true
 ```
 
-The next higher-order function not only returns a function but also take a function as its parameter.
+The next higher-order function not only returns a function but also takes a function as its parameter.
 
 ```javascript
 function makeNoisy(functionToDebug) {
@@ -98,7 +98,7 @@ for (let element of a) {
 
 ### Array summarizing
 
-`reduce` is a a higher-order method of arrays that allosw summarizing an array `a` into a single summary value
+`reduce` is a a higher-order method of arrays that allows summarizing an array `a` into a single summary value
 based on a start summary value, 
 and a function that combines the current summary value with an additional element of the array. 
 Such function is usually like this.
