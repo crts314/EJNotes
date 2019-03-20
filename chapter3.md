@@ -34,7 +34,7 @@ For bindings defined outside of any function or block, the scope is the whole pr
 You can refer to such bindings wherever you want. These are called global.
 
 Otherwise, the scope usually starts at the instruction where the binding is declared and dies at the end of its block. 
-Such are bindings are known as local. 
+Such bindings are known as local. 
 
 Bindings created for function parameters or declared inside a function can be referenced only in that function, 
 so they are local bindings as well. Every time the function is called, new instances of these bindings are created. 
