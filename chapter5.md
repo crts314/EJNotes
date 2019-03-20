@@ -83,7 +83,7 @@ based on a test function `transformF` that can transform a single element of the
 like `filter` it does not modify the original array but rather creates and returns the new transformed array.
 
 ```javascript
-let mapped = a.map(testF);
+let mapped = a.map(transformF);
 ```
 
 This can be again achieved using the equivalent for loop
