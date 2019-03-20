@@ -49,7 +49,7 @@ let day1 = {
 
 Inside the braces, there is a list of properties separated by commas. Each property has a name followed by a colon and a value.
 
-It is possible to assign a value to a property expression with the = operator. This will replace the property’s value if it already existed or create a new property on the object if it didn’t.
+It is possible to assign a value to a property expression with the `=` operator. This will replace the property’s value if it already existed or create a new property on the object if it didn’t.
 
 `delete` is a unary operator that, when applied to an object property, removes the named property from the object.
 
@@ -123,7 +123,7 @@ console.log([0, 10, 20, 30, 40].slice(2, 4)); // → [20, 30]
 console.log([0, 10, 20, 30, 40].slice(2)); // → [20, 30, 40]
 ```
 
-The `concat` method can be used to glue arrays together to create a new array, similar to what the + operator does for strings.
+The `concat` method can be used to glue arrays together to create a new array, similar to what the `+` operator does for strings.
 
 ```javascript
 console.log(["a", "b"].concat(["c", "d"])); // → ["a", "b", "c", "d"]
@@ -154,7 +154,7 @@ console.log("  okay \n ".trim()); // → okay
 ```
 
 `padStart` takes the desired length and padding character as arguments 
-and keeps adding the charachter as prefix until the the string reaches its length.
+and keeps adding the charachter as prefix until the the string reaches the desired length.
 
 ```javascript
 console.log(String(6).padStart(3, "0")); // → 006
