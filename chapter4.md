@@ -61,7 +61,7 @@ It is possible to assign a value to a property expression with the = operator. T
 console.log(Object.keys({x: 0, y: 0, z: 2})); // → ["x", "y", "z"]
 ```
 
-#### Immutability
+### Immutability
 
 The types of values discussed in earlier chapters, such as numbers, strings, and Booleans, are all immutable—it is impossible to change values of those types.
 
