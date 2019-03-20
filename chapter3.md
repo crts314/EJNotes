@@ -33,8 +33,8 @@ Each binding has a scope, which is the part of the program in which the binding 
 For bindings defined outside of any function or block, the scope is the whole program. 
 You can refer to such bindings wherever you want. These are called global.
 
-Otherwise, the scope usually starts at the instruction where the binding is declared and dies at the end of its block. 
-Such bindings are known as local. 
+Otherwise, the binding life starts at the instruction where the binding is declared and dies at the end of its block. 
+Such block is its scope and the binding is called local (to this block). 
 
 Bindings created for function parameters or declared inside a function can be referenced only in that function, 
 so they are local bindings as well. Every time the function is called, new instances of these bindings are created. 
@@ -119,7 +119,7 @@ console.log(minus(10, 5, true)); // → 5
 
 A function that references bindings from local scopes around it is called a closure. 
 Such bindings will remain alive even after the end of the block where they were defined.
-Thats how a function "closes on them" and can use their values whenever it is called. Example:
+Thats how a function definition "closes on them" and can use their values whenever it is called. Example:
 
 ```javascript
 function wrapValue(n) {
