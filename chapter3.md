@@ -43,7 +43,7 @@ This provides some isolation between functions
 Bindings declared with let and const are in fact local to the block that they are declared in, 
 so if you create one of those inside of a loop, the code before and after the loop does not “see” it. 
 
-Each scope can “look out” into the scope around it, so x is visible inside the block in the example. 
+Each scope can “look out” into the scope around it. 
 The exception is when multiple bindings have the same name—in that case, code can see only the innermost one. Example:
 
 ```javascript
