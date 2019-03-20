@@ -55,7 +55,7 @@ It is possible to assign a value to a property expression with the = operator. T
 
 `in` is a binary operator that, when applied to a string and an object, produces true if and only if the object has a property named as the string.
 
-`Object.keys` is a function with a single parameter. when called returns an array of the properties of the given parameter.
+`Object.keys` is a function with a single parameter. when called returns an array of the property names of the given parameter.
 
 ```javascript
 console.log(Object.keys({x: 0, y: 0, z: 2})); // → ["x", "y", "z"]
