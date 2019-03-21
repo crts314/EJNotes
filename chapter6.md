@@ -59,9 +59,17 @@ happyRabbit.speak("yaaay !!!") // → The happy rabbit says 'yaaay !!!'
 sadRabbit.speak("buuu ...") // → The sad rabbit says 'buuu ...' 
 ```
 
-It is possible to get the prototype of an object using the method `Object.getPrototypeOf` which takes as a parameter
-the concerned object. For example, after defining the class 'Rabbit' and creating an instance of it, `happyRabbit`:
+We get the prototype of an object using the method `Object.getPrototypeOf` which takes as a parameter the concerned object.
+For example, after defining the class 'Rabbit' and creating an instance of it, `happyRabbit` we have
 
 ```javascript
-console.log(Object.getPrototypeOf(happyRabbit) == Rabbit.prototype);
+console.log(Object.getPrototypeOf(happyRabbit) == Rabbit.prototype); // → true
+```
+
+We have seen before that binary operator `in` allows to check if an a object has a given property. 
+This also works for the properties coming from its prototype.
+
+```javascript
+console.log("name" in happyRabbit); // → true
+console.log("speak" in happyRabbit); // → true
 ```
