@@ -130,6 +130,7 @@ console.log(["a", "b"].concat(["c", "d"])); // → ["a", "b", "c", "d"]
 ```
 
 `indexOf` method takes as parameter a value and returns the first index of the array where such value is stored.
+When such value is not stored in the array; the method `indexOf` returns -1 instead of an index.
 
 ```javascript
 console.log([0, 10, 20, 30, 40].indexOf(20)); // → 2
