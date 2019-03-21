@@ -73,3 +73,17 @@ This also works for the properties coming from its prototype.
 console.log("name" in happyRabbit); // → true
 console.log("speak" in happyRabbit); // → true
 ```
+
+However to check if a property is specifique to the object we use the method `hasOwnProperty`
+
+```javascript
+console.log(happyRabbit.hasOwnProperty("name")); // → true
+console.log(happyRabbit.hasOwnProperty("speak")); // → false
+```
+
+We have seen before that the method `Object.keys` allows to list all the property names of an a object as an array. 
+This array will not include the properties coming from its prototype.
+
+```javascript
+console.log(Object.keys(happyRabbit)); // → ["name"]
+```
