@@ -60,7 +60,7 @@ sadRabbit.speak("buuu ...") // → The sad rabbit says 'buuu ...'
 ```
 
 We get the prototype of an object using the method `Object.getPrototypeOf` which takes as a parameter the concerned object.
-For example, after defining the class 'Rabbit' and creating an instance of it, `happyRabbit` we have
+For example, after defining the class `Rabbit` and creating an instance of it, `happyRabbit` we have
 
 ```javascript
 console.log(Object.getPrototypeOf(happyRabbit) == Rabbit.prototype); // → true
