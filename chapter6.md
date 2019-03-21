@@ -81,7 +81,7 @@ console.log(happyRabbit.hasOwnProperty("name")); // → true
 console.log(happyRabbit.hasOwnProperty("speak")); // → false
 ```
 
-We have seen before that the method `Object.keys` allows to list all the property names of an a object as an array. 
+We have seen before that the method `Object.keys` allows to list all the property names of an object as an array. 
 This array will not include the properties coming from its prototype.
 
 ```javascript
