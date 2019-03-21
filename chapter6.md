@@ -1,0 +1,60 @@
+# EJNotes
+
+## Chapter 6 - The secret life of objects
+
+### This
+
+When defining a method, in order to access the object on which a method is called, we use a "special parameter" named `this`.
+
+### Prottotypes and Classes
+
+Often a set of objects share a common behavior. This behavior can be described with a set of common methods. 
+
+Instead of declaring those methods for everyone of those similar objects, 
+javascript allows grouping those method in a single object known as "the prototype".
+
+When a method is called on an object and if the object doesn't have such method, 
+JavaScript falls back to its prototype to find such method.
+
+JavaScript has the notion of class, which is an easy way to define the prototype and attach it to the corresponding objects.
+
+In `class` we define all the methods that are common to the objects of this class.
+
+In `class` we also define the `constructor` method which intializes the properties that are specific to each object.
+
+To define a new object of a class, we use `new` keyword followed by a function with the same name of the class, 
+to which we provide the same parameters as the `constructor` method.
+
+Consider this example of many rabbits sharing the same `speak` behavior. 
+In this example the speak method is added to every object.
+
+```javascript
+function speak(line) {
+  console.log(`The ${this.name} rabbit says '${line}'`);
+}
+
+let happyRabbit = {name: "happy", speak};
+let sadRabbit = {name: "sad", speak};
+
+happyRabbit.speak("yaaay !!!") // → The happy rabbit says 'yaaay !!!' 
+sadRabbit.speak("buuu ...") // → The sad rabbit says 'buuu ...' 
+```
+
+An alternative is to use a Rabbit `class`.
+
+```javascript
+class Rabbit {
+  constructor(n) {
+    this.name = n;
+  }
+  speak(line) {
+    console.log(`The ${this.name} rabbit says '${line}'`);
+  }
+}
+
+let killerRabbit = new Rabbit("happy");
+let blackRabbit = new Rabbit("sad");
+
+happyRabbit.speak("yaaay !!!") // → The happy rabbit says 'yaaay !!!' 
+sadRabbit.speak("buuu ...") // → The sad rabbit says 'buuu ...' 
+```
