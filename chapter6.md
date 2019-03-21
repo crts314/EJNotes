@@ -6,7 +6,7 @@
 
 When defining a method, in order to access the object on which a method is called, we use a "special parameter" named `this`.
 
-### Prottotypes and Classes
+### Prototypes and Classes
 
 Often a set of objects share a common behavior. This behavior can be described with a set of common methods. 
 
