@@ -52,9 +52,16 @@ class Rabbit {
   }
 }
 
-let killerRabbit = new Rabbit("happy");
-let blackRabbit = new Rabbit("sad");
+let happyRabbit = new Rabbit("happy");
+let sadRabbit = new Rabbit("sad");
 
 happyRabbit.speak("yaaay !!!") // → The happy rabbit says 'yaaay !!!' 
 sadRabbit.speak("buuu ...") // → The sad rabbit says 'buuu ...' 
+```
+
+It is possible to get the prototype of an object using the method `Object.getPrototypeOf` which takes as a parameter
+the concerned object. For example, after defining the class 'Rabbit' and creating an instance of it, `happyRabbit`:
+
+```javascript
+console.log(Object.getPrototypeOf(happyRabbit) == Rabbit.prototype);
 ```
