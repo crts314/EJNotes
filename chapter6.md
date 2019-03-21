@@ -40,7 +40,7 @@ happyRabbit.speak("yaaay !!!") // → The happy rabbit says 'yaaay !!!'
 sadRabbit.speak("buuu ...") // → The sad rabbit says 'buuu ...' 
 ```
 
-An alternative is to use a Rabbit `class`.
+An alternative is to use a `class Rabbit`.
 
 ```javascript
 class Rabbit {
