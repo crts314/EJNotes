@@ -140,7 +140,7 @@ console.log( [1, 2][MyBindings.f]() ); // → 1,2
 console.log( [1, 2]["to"+"String"]() ); // → 1,2
 ```
 
-# The Iterator Interface.
+### The Iterator Interface.
 
 Consider some object representing a collection of elements. such object is called *iterable* if it has a function named `[Symbol.Iterator]` returning an *iterator*, which allows producing sequentially all its elements.
 
