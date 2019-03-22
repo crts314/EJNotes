@@ -87,3 +87,66 @@ This array will not include the properties coming from its prototype.
 ```javascript
 console.log(Object.keys(happyRabbit)); // → ["name"]
 ```
+
+### Maps
+
+A map (noun) is a data structure that associates values (the keys) with other values.
+
+It is possible to use objects for this. But be careful to not use the properties coming from its prototype.
+
+Another solution is to use an object of the class `Map` which is part of the standard library.
+
+```javascript
+let ages = new Map();
+ages.set("Boris", 39);
+ages.set("Liang", 22);
+ages.set("Júlia", 62);
+
+console.log(`Júlia is ${ages.get("Júlia")}`); // → Júlia is 62
+console.log("Is Jack's age known?", ages.has("Jack")); // → Is Jack's age known? false
+```
+
+### Polymorphism
+
+Polymorphism is when a piece of code is written to work with objects that have a certain interface ,
+any kind of object that happens to support this interface can be plugged into the code, and it will just work.
+
+When you call the String function (which converts a value to a string) on an object, 
+it will call the toString method on that object to try to create a meaningful string from it.
+
+```javascript
+Rabbit.prototype.toString = function() {
+  return `a ${this.name} rabbit`;
+};
+
+console.log(String(happyRabbit));
+// → a happy rabbit
+```
+
+### Expressions for property names
+
+Assume we have a javascript expression `expr` that when evaluated produces a string `"propName"`.
+
+Therefore when defining a property with the name `probName` we can use instead `[expr]`.
+To access such property on an object `obj`, we can either use `obj.probName` or `obj[expr]`.
+Example:
+
+```javascript
+MyBindings = {
+  f: "toString" 
+}
+console.log( [1, 2].toString() ); // → 1,2
+console.log( [1, 2][MyBindings.f]() ); // → 1,2
+console.log( [1, 2]["to"+"String"]() ); // → 1,2
+```
+
+# The Iterator Interface.
+
+Consider some object representing a collection of elements. such object is called *iterable* if it has a function named `[Symbol.Iterator]` returning an *iterator*, which allows producing sequentially all its elements.
+
+An object is called *iterator* if it has a function named `next` which, when called, returns an object with two propreties:
+- `done` : equal to true if there is no more elements to produce, and false otherwise.
+- `value` : contains the value of the next element in the sequence produced by this iterator.
+
+
+
