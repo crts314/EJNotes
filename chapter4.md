@@ -228,10 +228,10 @@ it is possible to use a more explicit syntax:
 
 ```javascript
 // function definition 
-function printAll(param1, [otherParam2, otherParam3]) {
+function printAll(param1, [elementA, elementB]) {
   console.log(param1);
-  console.log(otherParam2);
-  console.log(otherParam3);
+  console.log(elementA);
+  console.log(elementB);
 }
 
 //function call 
