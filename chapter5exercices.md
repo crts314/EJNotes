@@ -1,30 +1,67 @@
 # EJ exercices 
 
-## Chapter 4 - Objects and Arrays
+## Chapter 5 - Higher-order functions
 
-### Exercice 1 - The sum of ranges
+### Exercice 1 - Flattening
 
 ```javascript
-function range(start, end, step = 1) {
-  let result =  [];
-  for (i = start; true ; i = i + step) {
-    result.push(i);
-    if (i == end) {
-      break;
+let arrays = [[1, 2, 3], [4, 5], [6]];
+
+function combineF(currentSummary, element) {
+  return currentSummary.concat(element);
+}
+
+console.log(arrays.reduce(combineF, [])); // → [1, 2, 3, 4, 5, 6]
+```
+
+### Exercice 2 - Your own loop
+
+```javascript
+function loop(value, testF, updateF, bodyF) {
+    while(testF(value)) {
+      bodyF(value);
+      value = updateF(value);
+    }
+}
+
+loop(3, n => n > 0, n => n - 1, console.log);
+// → 3
+// → 2
+// → 1
+```
+
+### Exercices - Everything
+
+```javascript
+// Only one of the following should be used.
+
+// implementation using the classic array loop
+function every(array, testF) {
+  for (let element of array) {
+    if (!testF(element)) {
+      return false;
     }
   }
-  return result;
+  return true;
 }
 
-function sum(array) {
-  let result = 0;
-  for (let element of array) {
-    result = result + element;
+// implementation using the method some
+function every(array, testF) {
+  
+  function test2F(element) {
+    return !testF(element);
   }
-  return result;
+  
+  if(array.some(test2F)) {
+    return false;
+  }
+  else {
+    return true;
+  }
 }
 
-console.log(range(1, 10)); // → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-console.log(range(5, 2, -1)); // → [5, 4, 3, 2]
-console.log(sum(range(1, 10))); // → 55
+console.log(every([1, 3, 5], n => n < 10)); // → true
+console.log(every([2, 4, 16], n => n < 10)); // → false
+console.log(every([], n => n < 10)); // → true
 ```
+
