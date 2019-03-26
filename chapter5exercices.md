@@ -30,7 +30,7 @@ loop(3, n => n > 0, n => n - 1, console.log);
 // → 1
 ```
 
-### Exercices - Everything
+### Exercices 3 - Everything
 
 ```javascript
 // Only one of the following should be used.
