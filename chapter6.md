@@ -96,6 +96,26 @@ It is possible to use objects for this. But be careful to not use the properties
 
 Another solution is to use an object of the class `Map` which is part of the standard library.
 
+To add new key `k` to the map `map` with value `v` we use the method `set` like this.
+
+```javascript
+map.set(k, v);
+```
+
+If `k` was already in the map, the previous instruction will change his value to `v`
+
+To get the value of a key `k` we use the method `get` like this
+
+```javascript
+let v = map.get(k);
+```
+
+To check if the map has a key `k` we use the method `has`.
+
+```javascript
+let testResult = map.has(k);
+```
+
 ```javascript
 let ages = new Map();
 ages.set("Boris", 39);
