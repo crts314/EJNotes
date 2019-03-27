@@ -116,6 +116,8 @@ To check if the map has a key `k` we use the method `has`.
 let testResult = map.has(k);
 ```
 
+Here is a complete example
+
 ```javascript
 let ages = new Map();
 ages.set("Boris", 39);
