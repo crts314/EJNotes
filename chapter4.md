@@ -51,6 +51,8 @@ Inside the braces, there is a list of properties separated by commas. Each prope
 
 It is possible to assign a value to a property expression with the `=` operator. This will replace the property’s value if it already existed or create a new property on the object if it didn’t.
 
+If we try to access a property that doesn't exist, we get `undefined`.
+
 `delete` is a unary operator that, when applied to an object property, removes the named property from the object.
 
 `in` is a binary operator that, when applied to a string and an object, produces true if and only if the object has a property named as the string.
