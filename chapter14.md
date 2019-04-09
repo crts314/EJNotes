@@ -63,32 +63,32 @@ let nodeWeLookFor = document.getElementById("123");
 
 ### Modifying the DOM
 
-To create a new element node with tag `ttt`
+To create a new element node with tag `ttt` :
 
 ```javascript
 let newNode = document.createElement("ttt");
 ```
 
-To create a new text node with text `hello`
+To create a new text node with text `hello` :
 
 ```javascript
 let newNode = document.createTextNode("hello");
 ```
 
-To append `newNode` as a child of `node`
+To append `newNode` as a child of `node` :
 
 ```javascript
-node.appendChild(ndewNode);
+node.appendChild(newNode);
 ```
 
-To append `newNode` as a child of `node` before one of its `existingChildNode`
+To append `newNode` as a child of `node` before one of its `existingChildNode` :
 
 ```javascript
 node.insertBefore(newNode, existingChildNode);
 ```
 
-To replace a child of `node`, that is `existingChildNode`, with `newNode`. 
-(if `newNode` is already in the tree, it will be removed from his old position in the tree) 
+To replace a child of `node`, that is `existingChildNode`, with `newNode` 
+(if `newNode` is already in the tree, it will be removed from his old position in the tree) :
 
 ```javascript
 node.replaceChild(newNode, existingChildNode);
