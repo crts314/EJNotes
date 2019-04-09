@@ -41,7 +41,7 @@ This tree has two type of nodes:
 
 ### Navigating the DOM
 
-Every node has a set of methods that allow to move to the direct childs/parent.
+Every node has a set of methods that allow to move to the direct children/parent.
 
 <p align="center">
   <img src="https://eloquentjavascript.net/img/html-links.svg">
