@@ -170,5 +170,34 @@ An object is called *iterator* if it has a function named `next` which, when cal
 - `done` : equal to true if there is no more elements to produce, and false otherwise.
 - `value` : contains the value of the next element in the sequence produced by this iterator.
 
+### Inheritance
+
+JavaScript allows to create a new class, much like the old class, but with new definitions for some of its properties. 
+In object-oriented programming terms, this is called inheritance. 
+The new class inherits properties and behavior from the old class.
+The keyword for doing this is `extends`. 
+We can call the constructor of the parent class inside the constructor of the new child class using `super()`.
+We can access a method `actionF` of the parent class inside any method of the new child class using `super.actionF()`.
+Example
+
+```javascript
+class Child extends Parent {
+  constructor(param1, param2) {
+    super(param1);
+    this.additionalProperty = param2;
+  }
+  
+  actionF(param) {
+    // call the parent method
+    super.actionF(param);
+    // then add instructions that are specific to the child
+    console.log("This is the child class !");
+  }
+}
+```
+
+It is occasionally useful to know whether an object was derived from a specific class. 
+For this, JavaScript provides a binary operator called `instanceof`
+
 
 
