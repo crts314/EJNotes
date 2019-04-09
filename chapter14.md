@@ -24,11 +24,15 @@ Tags such as `<body>` and `</body>` enclose other tags, which in turn contain ot
 
 This page has the following structure
 
-![alt html boxes](https://eloquentjavascript.net/img/html-boxes.svg)
+<p align="center">
+  <img src="https://eloquentjavascript.net/img/html-boxes.svg">
+</p>
 
 Another way to visualize our document tree is as follows
 
-![alt html tree](https://eloquentjavascript.net/img/html-tree.svg)
+<p align="center">
+  <img src="https://eloquentjavascript.net/img/html-tree.svg">
+</p>
 
 This tree has two type of nodes:
 
@@ -39,7 +43,9 @@ This tree has two type of nodes:
 
 Every node has a set of methods that allow to move to the direct childs/parent.
 
-![alt navigating parent/childs](https://eloquentjavascript.net/img/html-links.svg)
+<p align="center">
+  <img src="https://eloquentjavascript.net/img/html-links.svg">
+</p>
 
 An alternative way of navigating is to look for an element based on its tag or id.
 
