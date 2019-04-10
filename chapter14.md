@@ -49,7 +49,7 @@ Every node has a set of methods that allow to move to the direct children/parent
 
 An alternative way of navigating is to look for an element based on its tag or id.
 
-To access the first element node in the subtree of node with tag `ttt`
+To access the first element node in the subtree of `node` with tag `ttt`
 
 ```javascript 
 let nodeWeLookFor = node.getElementByTag("ttt");
@@ -75,23 +75,26 @@ To create a new text node with text `hello` :
 let newNode = document.createTextNode("hello");
 ```
 
-To append `newNode` as a child of `node` :
+To add `newNode` as a child of `node` :
 
 ```javascript
 node.appendChild(newNode);
 ```
 
-To append `newNode` as a child of `node` before one of its `existingChildNode` :
+To add `newNode` as a child of `node` before one of its `existingChildNode` :
 
 ```javascript
 node.insertBefore(newNode, existingChildNode);
 ```
 
-To replace a child of `node`, that is `existingChildNode`, with `newNode` 
-(if `newNode` is already in the tree, it will be removed from his old position in the tree) :
+To replace a child of `node`, that is `existingChildNode`, with `newNode` :
 
 ```javascript
 node.replaceChild(newNode, existingChildNode);
 ```
+
+(if `newNode` is already in the tree, it will be removed from his old position in the tree) 
+
+
 
 
