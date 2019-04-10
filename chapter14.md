@@ -52,7 +52,7 @@ An alternative way of navigating is to look for an element based on its tag or i
 To access the first element node in the subtree of `node` with tag `ttt`
 
 ```javascript 
-let nodeWeLookFor = node.getElementByTag("ttt");
+let nodeWeLookFor = node.getElementByTagName("ttt");
 ```
 
 To access the element node with id `123`.
