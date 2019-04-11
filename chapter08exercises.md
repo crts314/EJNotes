@@ -2,7 +2,7 @@
 
 ## Chapter 8 - Bugs and Errors
 
-### Retry
+### Exercise 1 - Retry
 
 ```javascript
 class MultiplicatorUnitFailure extends Error {}
@@ -30,7 +30,7 @@ console.log(reliableMultiply(8, 8));
 // → 64
 ```
 
-### The locked box
+### Exercise 2 - The locked box
 
 ```javascript
 const box = {
