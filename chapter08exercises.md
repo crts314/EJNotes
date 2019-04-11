@@ -1,6 +1,6 @@
 # EJ exrcices
 
-## Bugs and Errors
+## Chapter 8 - Bugs and Errors
 
 ### Retry
 
