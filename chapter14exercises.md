@@ -2,7 +2,7 @@
 
 ## Chapter 14 - The Document Object Model
 
-### Exercice 1 - Build a table
+### Exercise 1 - Build a table
 
 <h1>Mountains</h1>
 
@@ -98,7 +98,7 @@
   */
 </script>
 
-### Exercice 2 - Elements by tag name
+### Exercise 2 - Elements by tag name
 
 <h1>Heading with a <span>span</span> element.</h1>
 <p>A paragraph with <span>one</span>, <span>two</span>
@@ -128,7 +128,7 @@
   // → 2
 </script>
 
-### Exercice 3 - The cat’s hat
+### Exercise 3 - The cat’s hat
 
 <style>body { min-height: 200px }</style>
 <img src="img/cat.png" id="cat" style="position: absolute">
