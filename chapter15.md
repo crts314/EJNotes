@@ -74,7 +74,7 @@ But when looking for key combinations, you can also find out whether these keys 
 
 ### Mouse events
 
-"mousedown", "mouseup", "click" and "dblclick" are mouse click event names.
+`"mousedown"`, `"mouseup"`, `"click"` and `"dblclick"` are mouse click event names.
 
 If we want to know which mouse button was pressed, we can look at the event object’s button property.
 
@@ -94,7 +94,7 @@ If we want to know which mouse button was pressed, we can look at the event obje
 </script>
 ````
 
-"mousemove" is a mouse motion event name. 
+`"mousemove"` is a mouse motion event name. 
 
 This event can be used to track the position of the mouse.
 A common situation in which this is useful is when implementing some form of mouse-dragging functionality.
