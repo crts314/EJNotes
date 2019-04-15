@@ -6,7 +6,7 @@ Browsers allow us to register functions as handlers for specific events. handler
 
 ### Registering events
 
-We can add an event listenner with Function `handlerF` to handle on a `node` the events triggered by `"xxx"` (such as `"click"`).
+We can add an event listenner with a function `handlerF` to handle on a `node` the events triggered by `"xxx"` (such as `"click"`).
 
 ````javascript
 node.addEventListener("xxx", handlerF)
