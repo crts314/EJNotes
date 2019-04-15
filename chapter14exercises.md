@@ -4,6 +4,7 @@
 
 ### Exercise 1 - Build a table
 
+````javascript
 <h1>Mountains</h1>
 
 <div id="mountains">
@@ -52,7 +53,6 @@
     return node;
   }  
 
-
   // Input : name , height , place of one mountain
   // Output : ElementNode corresponding to the html row for this mountain
   
@@ -97,9 +97,11 @@
   document.body.appendChild(myheader); 
   */
 </script>
+````
 
 ### Exercise 2 - Elements by tag name
 
+````javascript
 <h1>Heading with a <span>span</span> element.</h1>
 <p>A paragraph with <span>one</span>, <span>two</span>
   spans.</p>
@@ -155,3 +157,4 @@
   }
   requestAnimationFrame(animate);
 </script>
+````
