@@ -4,6 +4,7 @@
 
 ### Exercise 1 - Balloon
 
+````javascript
 <p id="firstP">🎈</p>
 <p id="secondP" style="display: none">💥</p>
 
@@ -51,9 +52,11 @@
   //attach this handler to window.
   
 </script>
+````
 
 ### Exercise 2 - Balloon
 
+````javascript
 <style>
   .trail { /* className for the trail elements */
     position: absolute;
@@ -77,3 +80,4 @@
   });
   
 </script>
+````
