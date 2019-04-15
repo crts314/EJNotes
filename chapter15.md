@@ -2,7 +2,7 @@
 
 ## Chapter 15 - Handling events
 
-Browsers allow us to register functions as handlers for specific events.
+Browsers allow us to register functions as handlers for specific events. handlers are just callbacks.
 
 ### Registering events
 
