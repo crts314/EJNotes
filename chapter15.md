@@ -32,7 +32,7 @@ event.stopPropagation();
 
 ### Default handlers
 
-For a specific node and a specific event several events may be registred and all will be called when such event occur on the node.
+For a specific node and a specific event, several handlers may be registred and all will be called when such event occur on the node.
 Some nodes have by default a registered handler. One can not remove it but can prevent it 
 Since the default handler is the last handler to be called, any other registered handler may choose to cancel it using:
 
