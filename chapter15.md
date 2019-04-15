@@ -2,16 +2,7 @@
 
 ## Chapter 15 - Handling events
 
-Browsers allow us to register functions as handlers for specific events. Here is a basic example
-
-````javascript
-<p>Click this document to activate the handler.</p>
-<script>
-  window.addEventListener("click", () => {
-    console.log("You knocked?");
-  });
-</script>
-````
+Browsers allow us to register functions as handlers for specific events.
 
 ### Registering events
 
@@ -51,7 +42,7 @@ event.preventDefault();
 
 ### Key events
 
-"keyup", "keydown" are key event names.
+`"keyup"`, `"keydown"` are key event names.
 
 The key name is accessed using `event.key`.
 For special keys such as enter, it holds a string that names the key ("Enter", in this case). 
