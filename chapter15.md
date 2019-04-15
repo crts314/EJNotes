@@ -51,7 +51,7 @@ event.preventDefault();
 
 ### Key events
 
-"keyup", "keydown" are the main key event names.
+"keyup", "keydown" are key event names.
 
 The key name is accessed using `event.key`.
 For special keys such as enter, it holds a string that names the key ("Enter", in this case). 
@@ -72,4 +72,38 @@ But when looking for key combinations, you can also find out whether these keys 
 </script>
 ````
 
+### Mouse events
+
+"mousedown", "mouseup", "click" and "dblclick" are mouse click event names.
+
+If we want to know which mouse button was pressed, we can look at the event object’s button property.
+
+````javascript
+<button>Click me any way you want</button>
+<script>
+  let button = document.querySelector("button");
+  button.addEventListener("mousedown", event => {
+    if (event.button == 0) {
+      console.log("Left button");
+    } else if (event.button == 1) {
+      console.log("Middle button");
+    } else if (event.button == 2) {
+      console.log("Right button");
+    }
+  });
+</script>
+````
+
+"mousemove" is a mouse motion event name. 
+
+This event can be used to track the position of the mouse.
+A common situation in which this is useful is when implementing some form of mouse-dragging functionality.
+
+we can use the buttons property (note the plural), which tells us about the buttons that are currently held down. 
+When this is zero, no buttons are down. When buttons are held, its value is the sum of the codes for those buttons—the left button has code 1, the right button 2, and the middle one 4. 
+
+To get precise information about the place where a mouse event happened, 
+you can look at its clientX and clientY properties, which contain the event’s coordinates (in pixels) 
+relative to the top-left corner of the window, 
+or pageX and pageY, which are relative to the top-left corner of the whole document.
 
