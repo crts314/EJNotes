@@ -1,4 +1,4 @@
-````html
+````javascript
 /* table as JavaScript object*/
 var cities = [
 		{city:"Zurich", lat:47, lng:9, pop:402762},
@@ -24,7 +24,7 @@ var cities = [
     
   createTable();
   
-	function createTable(){
+  function createTable(){
 		var globalCounter = 0;
 		var tbody = document.getElementById('tbody');
 		var thead = document.getElementById('thead');
