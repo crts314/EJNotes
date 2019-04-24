@@ -1,3 +1,4 @@
+````html
 /* table as JavaScript object*/
 var cities = [
 		{city:"Zurich", lat:47, lng:9, pop:402762},
@@ -64,3 +65,5 @@ var cities = [
 			tbody.innerHTML += tr;
 		}
 	}
+````						  
+						  
